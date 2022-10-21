@@ -112,11 +112,8 @@
 
         <br>
 
-        <div class="row" style="width:100%">
-          <div class="col-md-6">
-            <canvas id="barchart"></canvas>
-          </div>
-          <div class="col-md-6">
+        <!--Inicio do Grafico-->
+          <div class="col-md-12">
             <canvas id="linechart"></canvas>
           </div>
         </div>
@@ -173,39 +170,10 @@
             });
           }
         </script>
-
-        <br>
-
-        <div id="relatorio"></div>
-
-        <table class="table table-striped" cellspacing="0" cellpadding="0">
-          <thead>
-            <tr>
-              <th scope="col">Codigo (WMO)</th>
-              <th scope="col">Nome Estação</th>
-              <th scope="col">Id da Estação</th>
-              <th scope="col">Temp. Bulbo Seco</th>
-              <th scope="col">Temp. Max.</th>
-              <th scope="col">Temp. Min</th>
-              <th scope="col">Data e Hora</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr th:each="temp : ${teste_Temperatura}">
-              <td>[[${temp.est_codigo}]]</td>
-              <td>[[${temp.est_nome_estacao}]]</td>
-              <td>[[${temp.tem_id}]]</td>
-              <td>[[${temp.tem_ar_bulbo_seco}]]</td>
-              <td>[[${temp.tem_max}]]</td>
-              <td>[[${temp.tem_min}]]</td>
-              <td>[[${temp.tem_data_hora}]]</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!--Final do relatorio e filtros-->
+        <!--Fim do Gráfico-->
     </div>
-
+    <!--Final do relatorio e filtros-->
+    
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
